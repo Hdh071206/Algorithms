@@ -3,26 +3,6 @@ import java.util.Scanner;
 public class MinHeap {
     static int[] heap = new int[100005];
     static int size = 1;
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        for (int i = 0; i < 10; i++) {
-            push(sc.nextInt());
-        }
-
-        System.out.println("top : " + top());
-        for (int i = 1; i <= 10; i++) {
-            System.out.print(heap[i] + " ");
-        }
-        pop();
-        pop();
-        pop();
-        System.out.println("\ntop : " + top());
-        for (int i = 1; i <= 10; i++) {
-            System.out.print(heap[i] + " ");
-        }
-
-        sc.close();
-    }
     
     static int top() { // perfect
         return heap[1];
